@@ -1,0 +1,23 @@
+/* Import TailwindCSS (if needed) */
+@import "tailwindcss";
+
+
+
+/* Background animation for shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Shimmer effect for loading states */
+.animate-shimmer {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f8f8f8 50%, #e0e0e0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+
